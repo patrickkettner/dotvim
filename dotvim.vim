@@ -8,16 +8,8 @@
 "
 "
 
-set nocompatible
-
-set encoding=utf-8
-set binary
-
 " presentation settings
-set number              " precede each line with its line number
 set numberwidth=3       " number of culumns for line numbers
-set textwidth=0         " Do not wrap words (insert)
-set nowrap              " Do not wrap words (view)
 set showcmd             " Show (partial) command in status line.
 set showmatch           " Show matching brackets.
 set ruler               " line and column number of the cursor position
@@ -60,12 +52,8 @@ set mousehide           " Hide mouse pointer on insert mode."
 
 " search settings
 set incsearch           " Incremental search
-set hlsearch            " Highlight search match
-set ignorecase          " Do case insensitive matching
-set smartcase           " do not ignore if search pattern has CAPS
 
 " directory settings
-set nobackup            " do not write backup files
 set noswapfile          " do not write .swp files
 if has("persistent_undo")
   silent !mkdir -vp ~/.backup/vim/undo/ > /dev/null 2>&1
@@ -73,14 +61,6 @@ if has("persistent_undo")
   set directory=~/.backup/vim,~/tmp,. " list of directory names for the swap file
   set undofile
   set undodir=~/.backup/vim/undo/,~/tmp,.
-endif
-
-" folding
-if has("folding")
-  set foldcolumn=0        " columns for folding
-  set foldmethod=indent
-  set foldlevel=9
-  set nofoldenable        "dont fold by default "
 endif
 
 if has("user_commands")
