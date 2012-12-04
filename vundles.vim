@@ -46,7 +46,7 @@ if count(g:vundles, 'programming')
   endif
   if v:version > 700
     Bundle 'Shougo/neocomplcache'
-    Bundle 'Shougo/neocomplcache-snippets-complete'
+    Bundle 'Shougo/neosnippet'
     Bundle 'Indent-Guides'
   endif
 endif

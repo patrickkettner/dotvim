@@ -54,6 +54,7 @@ set mousehide           " Hide mouse pointer on insert mode."
 set incsearch           " Incremental search
 
 " directory settings
+set nobackup            " do not write backup files
 set noswapfile          " do not write .swp files
 if has("persistent_undo")
   silent !mkdir -vp ~/.backup/vim/undo/ > /dev/null 2>&1
